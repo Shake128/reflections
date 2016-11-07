@@ -6,19 +6,28 @@ What happens when you initialize a repository? Why do you need to do it?
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-The staging area is not an actual folder or a repository, it just temporarily stores informations about which files in the working directory will be included in the next commit and which will not.
-It is a safe space for organizing the content of your new commit before actually committing it.
+	The staging area is not an actual folder or a repository, it just temporarily stores informations about which files in the working directory will be included in the next commit and which will not.
+	It is a safe space for organizing the content of your new commit before actually committing it.
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+How can you use the staging area to make sure you have one commit per logical change?
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+	Its possible to add the files that contain the change in the staging area, then compare it to the latest build and to the working directory to make sure that the differences only contain one logical change.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	When creating something different is useful when creating something new to keep things organized and not to break the master branch.
+	New features, experimental branches, to collaborate with people, to context switch when working alone.
 
 How do the diagrams help you visualize the branch structure?
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+	Diagram can be useful in identifying when in time branches were created, locating them visually and accurately.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	Merging two branches together creates a new master branch that includes features and fixes from the other branch. We represent them like we do to remember the parents of the merge commit.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+	Pros are that a lot of the work can be automated and the critical areas of the code that are interested by conflicts are automatically highlighted. Cons are that there might still be errors in the automatic process from time to time I think.
+	
