@@ -1,4 +1,4 @@
-When would you want to use a remote repository rather than keeping all your work
+﻿When would you want to use a remote repository rather than keeping all your work
 local?
 
     Whenever having a backup can be useful, but mostly for cooperation with others.
@@ -37,4 +37,6 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    When collaborating it is often necessary to create separate branches to keep
+    features separated and avoid potential conflicts before the merge instead of 
+    having to resolve them every time they appear.
